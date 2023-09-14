@@ -1,0 +1,38 @@
+.progress-bar {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #ccc;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 12px;
+    background-color: #007bff;
+}
+.container {
+    margin: 20px 100px;
+    width: 50%;
+    background: aqua;
+    padding: 20px;
+    border-radius: 8px;
+}
+.div-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-button {
+    background: red;
+    display: flex;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 12px 4px;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
