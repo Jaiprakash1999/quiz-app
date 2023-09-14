@@ -4,14 +4,14 @@ import "../styles.css";
 function Result({ score, restartQuiz, userAnswers }) {
     return (
         <div>
-            <heder className="header">
+            <div className="header">
                 <h2>
                     Your Score: {score} / {userAnswers.length}
                 </h2>
                 <button onClick={restartQuiz} className="submit-button">
                     Restart Quiz
                 </button>
-            </heder>
+            </div>
             <hr />
 
             {userAnswers.map((answer, index) => (

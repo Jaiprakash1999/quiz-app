@@ -57,8 +57,8 @@ function QuizApp() {
     }, [currentQuestion, timeRemaining]);
 
     return (
-        <div className="div-container">
-            <div className="container">
+        <div className="container">
+            <div className="sub-container">
                 {showResult ? (
                     <Result
                         score={score}
@@ -66,7 +66,7 @@ function QuizApp() {
                         userAnswers={userAnswers}
                     />
                 ) : (
-                    <div className="sub-container">
+                    <>
                         <div className="progress-bar">
                             <div
                                 className="progress"
@@ -77,7 +77,7 @@ function QuizApp() {
                             questionData={quizData[currentQuestion]}
                             onAnswerSubmit={handleAnswerSubmit}
                         />
-                    </div>
+                    </>
                 )}
             </div>
         </div>

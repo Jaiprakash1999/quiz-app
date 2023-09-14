@@ -9,17 +9,22 @@
     border-radius: 12px;
     background-color: #007bff;
 }
-.container {
+.sub-container {
     margin: 20px 100px;
     width: 50%;
     background: aqua;
     padding: 20px;
     border-radius: 8px;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 12px;
+    }
 }
-.div-container {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .submit-button {
     background: red;
